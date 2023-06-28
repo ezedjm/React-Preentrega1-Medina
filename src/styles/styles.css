@@ -1,0 +1,84 @@
+/* Estilos para la app */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(5, 57, 153);
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.navList {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.navItem {
+    cursor: pointer;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.contenido {
+    padding-top: 60px;
+    text-align: center;
+    background-color: cornflowerblue;
+}
+
+.productoListado {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.productoItem {
+    background-color: rgb(177, 209, 252);
+    width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.productoItem button {
+    background-color: rgb(177, 209, 252);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.carrito {
+    color: antiquewhite;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(5, 57, 153, 0.87);
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 0px 10px 5px rgb(13, 47, 109);
+}
+
+.carritoCont {
+    font-weight: bold;
+    background-color: rgb(177, 209, 252);
+    color: rgb(0, 0, 0);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.fotoJuanito {
+    width: 6.5%;
+}
