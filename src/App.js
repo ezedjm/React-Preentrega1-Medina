@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import NavBar from './components/navBarSup.js';
 import productosDB from './components/productosDB.js';
 import './styles/styles.css';
+import Banner from './components/banners.js';
 
 
 const App = () => {
@@ -40,7 +41,7 @@ const App = () => {
     <div>
       <NavBar handleClickCarrito={handleClickCarrito} />
       <div className="contenido">
-        <h1>Banner de la página</h1>
+      <Banner />
         <div className="productoListado">
           {productosDB.map((producto) => (
             <div key={producto.id} className='productoItem'>

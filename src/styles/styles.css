@@ -73,6 +73,7 @@
 
 .carritoCont {
     font-weight: bold;
+    font-size: small;
     background-color: rgb(177, 209, 252);
     color: rgb(0, 0, 0);
     border-radius: 50%;
@@ -81,4 +82,9 @@
 
 .fotoJuanito {
     width: 6.5%;
+}
+
+.iconCarrito {
+    width: 25px;
+    height: 25px;
 }
