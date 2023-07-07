@@ -2,11 +2,13 @@ import React, { useState } from 'react';
 import NavBar from './components/navBarSup.js';
 import productosDB from './components/productosDB.js';
 import './styles/styles.css';
-import Banner from './components/banners.js';
+
+import ItemListContainer from './components/itemListContainer.js';
 
 
 const App = () => {
   const [carritoItems, setCarritoItems] = useState([]);
+  const username = window.navigator?.user?.username || 'Usuario'; // Obtener el nombre de usuario de la computadora
 
   const agregarCarrito = (producto) => {
     const existingItem = carritoItems.find((item) => item.id === producto.id);
@@ -40,8 +42,9 @@ const App = () => {
   return (
     <div>
       <NavBar handleClickCarrito={handleClickCarrito} />
+
+      <ItemListContainer greeting={`¡Hola ${username}, bienvenido a mi tienda!`} />
       <div className="contenido">
-      <Banner />
         <div className="productoListado">
           {productosDB.map((producto) => (
             <div key={producto.id} className='productoItem'>

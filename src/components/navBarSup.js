@@ -1,6 +1,7 @@
 import React from 'react';
 import logoImage from '../images/juanifavicon1bis.png';
 import carritoImage from '../images/cart.png';
+import CartWidget from './CartWidget';
 
 const navBarSup = ({ handleCartClick }) => {
   return (
@@ -12,8 +13,8 @@ const navBarSup = ({ handleCartClick }) => {
           <li className="navItem">Nosotros</li>
           <li className="navItem">Testimonios</li>
           
-          <li className="navItem" onClick={handleCartClick}><img className="iconCarrito" src={carritoImage} alt="icon de carrito" /> 
-                      <span className="carritoCont"> 9 </span>
+          <li className="navItem" onClick={handleCartClick}><img className="iconCarrito" src={carritoImage} alt="icon de carrito" /><CartWidget /> 
+          
           </li>
           <li className="navItem">Contacto</li>
         </ul>
