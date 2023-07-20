@@ -5,8 +5,17 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     /*margin: 10px;*/
 }
+
+.categories {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 5%;
+}
+
 
 .pruebaResorte {
     background-color: rgb(5, 57, 153);
@@ -37,12 +46,19 @@
 .logo {
     font-size: 48px;
     font-weight: bold;
+    text-decoration: none;
+    width: auto;
 }
 
 .navList {
     display: flex;
     list-style: none;
     padding: 0;
+}
+
+.listItem {
+    display: flex;
+    list-style: none;
 }
 
 .navItem {
@@ -63,13 +79,32 @@
     flex-wrap: wrap;
 }
 
-.productoItem {
+.categoryItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     background-color: rgb(177, 209, 252);
-    width: 400px;
+    width: 150px;
     border: 1px solid #ccc;
     border-radius: 20px;
     padding: 10px;
     margin: 10px;
+    text-decoration: none;
+}
+
+.productoItem {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    justify-content: space-around;
+    text-decoration: none;
+    background-color: rgb(177, 209, 252);
+    width: 380px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+
 }
 
 .productoItem button {

@@ -2,11 +2,14 @@ import React from 'react';
 import logoImage from '../images/juanifavicon1bis.png';
 import carritoImage from '../images/cart.png';
 import CartWidget from './CartWidget';
+import { Link } from 'react-router-dom';
 
 const navBarSup = ({ handleCartClick }) => {
   return (
     <div className="navbar">
-      <div className="logo">JUANIT<img className="fotoJuanito" src={logoImage} alt="foto de Juanito" /></div>
+      <Link to="/" className="logo">
+        JUANIT<img className="fotoJuanito" src={logoImage} alt="foto de Juanito" />
+      </Link>
       <nav>
         <ul className="navList">
           <li className="navItem">Inicio</li>
